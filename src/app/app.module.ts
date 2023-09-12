@@ -3,14 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GameComponent } from './game/game.component';
-import { SavedGameListComponent } from './saved-game-list/saved-game-list.component';
+import { SavedGameListComponent } from '../pages/saved-game-list/saved-game-list.component';
+import { GameComponent } from '../pages/game/game.component';
+import { BoardComponent } from '../components/board/board.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     GameComponent,
-    SavedGameListComponent
+    SavedGameListComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,

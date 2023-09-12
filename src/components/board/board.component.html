@@ -1,0 +1,9 @@
+<div class="game-container">
+
+    <div class="board-container">
+        <div class="cell" *ngFor="let cell of gameService.board; let i = index" (click)="updateBoard(i)">
+            {{getIcon(cell)}}
+        </div>
+    </div>
+    <p *ngIf="gameService.isTheGameOver">{{getEndLabel()}}</p>
+</div>
